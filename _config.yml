@@ -12,7 +12,6 @@ twitter_username: humanboring
 markdown: kramdown
 theme: jekyll-athena
 plugins:
-  - s3_website
   - jekyll-feed
   - jekyll-sitemap
 exclude:
