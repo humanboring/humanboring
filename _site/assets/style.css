@@ -34,7 +34,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Serif-UI-Text-Regular", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
+  font-family: NewYork, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
   font-size: 12px;
   line-height: 1.5;
   /*  color: var(--text-color);
@@ -510,3 +510,6 @@ code {
 
   .ml-lg-4 {
     margin-left: 64px; } }
+@font-face {
+  font-family: NewYork;
+  src: url("/assets/fonts/NewYorkMedium-Regular.otf"); }
