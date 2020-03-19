@@ -2,8 +2,35 @@
   * Reset some basic elements
 */
 @font-face {
-  font-family: "Serif-UI-Text-Regular";
-  src: url("/assets/sf_serif/Serif-UI-Text-Regular.otf"); }
+  font-family: 'NewYorkMedium';
+  src: url("/assets/fonts/newyorkmedium-regular-webfont.woff") format("woff"), url("/assets/fonts/newyorkmedium-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'NewYorkMedium';
+  src: url("/assets/fonts/newyorkmedium-regularitalic-webfont.woff") format("woff"), url("/assets/fonts/newyorkmedium-regularitalic-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'NewYorkMedium';
+  src: url("/assets/fonts/newyorkmedium-bold-webfont.woff") format("woff"), url("/assets/fonts/newyorkmedium-bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'NewYorkLarge';
+  src: url("/assets/fonts/newyorklarge-regular-webfont.woff") format("woff"), url("/assets/fonts/newyorklarge-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'NewYorkLarge';
+  src: url("/assets/fonts/newyorklarge-regularitalic-webfont.woff") format("woff"), url("/assets/fonts/newyorklarge-regularitalic-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'NewYorkLarge';
+  src: url("/assets/fonts/newyorklarge-bold-webfont.woff") format("woff"), url("/assets/fonts/newyorklarge-bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
 @media (prefers-color-scheme: light) {
   div {
     color: #000000;
@@ -28,14 +55,17 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: NewYork; }
 
 /**
  * Basic styling
  */
 body {
-  font-family: NewYork, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
-  font-size: 12px;
+  font-family: "NewYorkMedium", system, -apple-system-body, BlinkMacSystemFont;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
   line-height: 1.5;
   /*  color: var(--text-color);
     background-color: var(--page-background-color); */ }
@@ -46,25 +76,26 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
-  margin-bottom: 0.25em; }
+  margin-bottom: 0.25em;
+  font-family: "NewYorkLarge", -apple-system-headline, BlinkMacSystemFont, serif; }
 
 h1, .h1 {
-  font-size: 32px; }
+  font-size: 40px; }
 
 h2, .h2 {
-  font-size: 28px; }
+  font-size: 36px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 32px; }
 
 h4, .h4 {
-  font-size: 20px; }
+  font-size: 28px; }
 
 h5, .h5 {
-  font-size: 16px; }
+  font-size: 24px; }
 
 h6, .h6 {
-  font-size: 12px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.02em; }
 
@@ -88,11 +119,11 @@ pre {
 
 code {
   color: #423F38;
-  font-size: 12px;
+  font-size: 20px;
   padding: 1px 4px; }
 
 .prose p, .prose ol, .prose ul {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 1em;
   width: 100%; }
 .prose ul, .prose ol {
@@ -155,13 +186,13 @@ code {
 
 /* Type utilities */
 .h0 {
-  font-size: 38px;
+  font-size: 44px;
   line-height: 1.0125;
   margin-top: 0.85em;
   word-wrap: break-word; }
   @media (min-width: 32em) {
     .h0 {
-      font-size: 42px; } }
+      font-size: 44px; } }
 
 .text-right {
   text-align: right; }
