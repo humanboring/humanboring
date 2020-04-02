@@ -15,15 +15,14 @@ source "https://rubygems.org"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
-gem 'jekyll-athena'
-gem 'jekyll'
+gem "jekyll-athena"
+gem "jekyll"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
 
-gem 'font-awesome-sass'
-gem 'jekyll-json-feed'
-gem 'jekyll-feed'
-gem 'jekyll-sitemap'
+gem "font-awesome-sass"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
 
 
 end
